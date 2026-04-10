@@ -1,22 +1,26 @@
-name: Day 5 CI Pipeline
+name: Day 5 CI with Docker
 
 on:
   push:
     paths:
       - 'Day-5-github-actions/**'
-    branches:
-      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout Code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: List Files
-        run: ls -la
+      - name: Build Docker Image
+        run: docker build -t my-app ./Day-5-github-actions
 
-      - name: Success Message
-        run: echo "CI is working"
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Tag Image
+        run: docker tag my-app ${{ secrets.DOCKER_USERNAME }}/day5-app:latest
+
+      - name: Push Image
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/day5-app:latest
