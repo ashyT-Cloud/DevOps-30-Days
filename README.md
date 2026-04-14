@@ -21,6 +21,8 @@
 * Application accessible via port 80
 * Improved production readiness
 
+- Day 8: HTTPS (Concept + Self-Signed SSL)
+
 
 
   
