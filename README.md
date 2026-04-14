@@ -14,6 +14,14 @@
 * Docker container auto-updated on every push
 * Live application hosted on AWS EC2
 
+- ### ✅ Day 7: Nginx Reverse Proxy
+
+* Configured Nginx as reverse proxy
+* Removed direct port exposure (3000)
+* Application accessible via port 80
+* Improved production readiness
+
+
 
   
 ## 🔥 Goal
