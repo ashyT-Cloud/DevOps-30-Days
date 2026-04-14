@@ -1,4 +1,4 @@
-# 🚀 Day 8: HTTPS Setup (Without Domain)
+# 🚀 Day 8: HTTPS Setup (Concept + Self-Signed SSL)
 
 ## 📌 Overview
 
