@@ -23,6 +23,13 @@
 
 - Day 8: HTTPS (Concept + Self-Signed SSL)
 
+## ✅ Day 9 - Monitoring & Debugging
+- System monitoring using Linux tools
+- Nginx service monitoring
+- Log analysis
+- Break & fix real-world scenarios
+- Debugged reverse proxy failure (port 3000 issue)
+
 
 
   
