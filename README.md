@@ -30,6 +30,9 @@
 - Break & fix real-world scenarios
 - Debugged reverse proxy failure (port 3000 issue)
 
+✅ Day 10 – Prometheus + Grafana
+
+Built full monitoring stack with dashboards
 
 
   
