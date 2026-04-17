@@ -34,6 +34,19 @@
 
 Built full monitoring stack with dashboards
 
+### ✅ Day 11 – Docker Monitoring (cAdvisor)
+
+Extended monitoring to container level using cAdvisor.
+Integrated container metrics with Prometheus and built custom Grafana dashboards using PromQL queries.
+
+---
+
+### ✅ Day 12 – Alerting with Prometheus & Alertmanager
+
+Implemented alerting system to detect high CPU usage and trigger notifications via Alertmanager.
+Simulated real-world incident using stress container and verified alert lifecycle (Pending → Firing).
+
+
 
   
 ## 🔥 Goal
