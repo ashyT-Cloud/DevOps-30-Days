@@ -47,6 +47,9 @@ Implemented alerting system to detect high CPU usage and trigger notifications v
 Simulated real-world incident using stress container and verified alert lifecycle (Pending → Firing).
 
 
+### ✅ Day 13 – CI/CD + Monitoring + Alerting Integration
+Integrated deployment pipeline with monitoring and alerting. Implemented application downtime detection and real-time alert triggering using Prometheus and Alertmanager.
+
 
   
 ## 🔥 Goal
