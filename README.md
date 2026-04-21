@@ -51,6 +51,16 @@ Simulated real-world incident using stress container and verified alert lifecycl
 Integrated deployment pipeline with monitoring and alerting. Implemented application downtime detection and real-time alert triggering using Prometheus and Alertmanager.
 
 
+### ✅ Day 14 - Kubernetes        --- Highlights
+- Set up Kubernetes cluster using kubeadm
+- Deployed Node.js app using Deployment
+- Exposed application using NodePort
+- Debugged real issues:
+  .  kubeadm installation errors
+  .  Repository issues
+  .  Pod scheduling (taints)
+  .  kubectl connectivity
+
   
 ## 🔥 Goal
 Become job-ready DevOps Engineer
