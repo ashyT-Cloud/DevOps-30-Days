@@ -31,3 +31,7 @@ jobs:
       run: |
         kubectl apply -f day-15-k8s-cicd/deployment.yml --insecure-skip-tls-verify=true
         kubectl apply -f day-15-k8s-cicd/service.yml  --insecure-skip-tls-verify=true
+
+    - name: Restart Deployment
+      run: |
+        kubectl rollout restart deployment node-app --insecure-skip-tls-verify=true
