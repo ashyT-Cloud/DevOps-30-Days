@@ -29,5 +29,5 @@ jobs:
 
     - name: Deploy to Kubernetes
       run: |
-        kubectl apply -f day-15-k8s-cicd/deployment.yml
-        kubectl apply -f day-15-k8s-cicd/service.yml
+        kubectl apply -f day-15-k8s-cicd/deployment.yml --validate=false
+        kubectl apply -f day-15-k8s-cicd/service.yml  --validate=false
