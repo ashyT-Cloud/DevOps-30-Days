@@ -61,6 +61,22 @@ Integrated deployment pipeline with monitoring and alerting. Implemented applica
   .  Pod scheduling (taints)
   .  kubectl connectivity
 
-  
+
+### Day 16 Highlights
+- Installed NGINX Ingress Controller
+- Configured Ingress resource for routing
+- Implemented:
+- Host-based routing (myapp.local)
+- Catch-all routing (no host)
+
+Accessed application using:
+
+http://<EC2-IP>:<NodePort>
+
+Understood traffic flow:
+
+Browser → Ingress → Service → Pod
+
+
 ## 🔥 Goal
 Become job-ready DevOps Engineer
