@@ -48,10 +48,12 @@ Simulated real-world incident using stress container and verified alert lifecycl
 
 
 ### ✅ Day 13 – CI/CD + Monitoring + Alerting Integration
+
 Integrated deployment pipeline with monitoring and alerting. Implemented application downtime detection and real-time alert triggering using Prometheus and Alertmanager.
 
 
-### ✅ Day 14 - Kubernetes        --- Highlights
+### ✅ Day 14 - Kubernetes
+
 - Set up Kubernetes cluster using kubeadm
 - Deployed Node.js app using Deployment
 - Exposed application using NodePort
@@ -61,14 +63,22 @@ Integrated deployment pipeline with monitoring and alerting. Implemented applica
   .  Pod scheduling (taints)
   .  kubectl connectivity
 
+### Day 15 - CI/CD with Kubernetes
+
+- Day 18 Highlights
+- Installed cert-manager for automated certificate management
+- Created ClusterIssuer for self-signed certificates
+- Integrated cert-manager with Kubernetes Ingress
+- Automated TLS certificate creation and usage
+- Verified HTTPS using NodePort and domain mapping
 
 ### Day 16 Highlights
+
 - Installed NGINX Ingress Controller
 - Configured Ingress resource for routing
 - Implemented:
 - Host-based routing (myapp.local)
 - Catch-all routing (no host)
-
 Accessed application using:
 
 http://<EC2-IP>:<NodePort>
@@ -76,6 +86,24 @@ http://<EC2-IP>:<NodePort>
 Understood traffic flow:
 
 Browser → Ingress → Service → Pod
+
+### Day 17 – HTTPS (TLS)
+
+- Implemented manual TLS setup using self-signed certificates
+- Configured Ingress for HTTPS
+- Understood:
+  . TLS termination
+  . HTTP vs HTTPS ports
+  . Browser certificate behavior
+
+### Day 18 -  cert-manager (Auto TLS)
+
+- Installed cert-manager for automated certificate management
+- Created ClusterIssuer for self-signed certificates
+- Integrated cert-manager with Kubernetes Ingress
+- Automated TLS certificate creation and usage
+- Verified HTTPS using NodePort and domain mapping
+
 
 
 ## 🔥 Goal
