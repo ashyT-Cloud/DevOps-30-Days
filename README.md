@@ -104,6 +104,8 @@ Browser → Ingress → Service → Pod
 - Automated TLS certificate creation and usage
 - Verified HTTPS using NodePort and domain mapping
 
+--- Day 19: Implemented HTTPS using cert-manager and Let's Encrypt.
+ Secured Kubernetes application with valid SSL certificate and automatic renewal.
 
 
 ## 🔥 Goal
