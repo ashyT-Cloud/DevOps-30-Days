@@ -1,4 +1,4 @@
-# 🚀 DevOps 30 Days Challenge
+cd ~/DevOps-30-Days# 🚀 DevOps 30 Days Challenge
 
 ## 📅 Progress
 
@@ -106,6 +106,36 @@ Browser → Ingress → Service → Pod
 
 --- Day 19: Implemented HTTPS using cert-manager and Let's Encrypt.
  Secured Kubernetes application with valid SSL certificate and automatic renewal.
+
+### ## 🚀 Day 20 - Production Setup
+
+### 🔧 What I Built
+
+* Configured **Nginx as a reverse proxy**
+* Deployed Node.js app using **PM2 (process manager)**
+* Exposed application on **port 80 (no port in URL)**
+* Enabled **auto-restart and persistence**
+
+### 🧱 Architecture
+
+User → Nginx (80) → Node App (3000 via PM2)
+
+### 📁 Folder
+
+`Day-20-production/`
+
+### 🌐 Output
+
+Application accessible via EC2 Public IP without specifying port
+
+### 📌 Key Learnings
+
+* Reverse Proxy (Nginx)
+* Process Management (PM2)
+* Production deployment basics
+* Debugging real-world issues (ports, services)
+
+---
 
 
 ## 🔥 Goal
