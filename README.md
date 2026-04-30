@@ -135,6 +135,13 @@ Application accessible via EC2 Public IP without specifying port
 * Production deployment basics
 * Debugging real-world issues (ports, services)
 
+
+## Day 21 - HTTPS Setup
+- DuckDNS domain mapping
+- SSL using Let's Encrypt
+- Secure app over HTTPS
+
+
 ---
 
 
