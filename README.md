@@ -141,6 +141,37 @@ Application accessible via EC2 Public IP without specifying port
 - SSL using Let's Encrypt
 - Secure app over HTTPS
 
+### ## 🚀 Day 22 - Kubernetes Basics
+
+### 🔧 What I Built
+
+* Set up a Kubernetes cluster using **Minikube**
+* Deployed an application using **Deployment**
+* Exposed it using **Service (NodePort)**
+* Accessed application using **port-forwarding**
+
+### 🧱 Architecture
+
+kubectl → Deployment → Pod → Service → Port Forward → Browser
+
+### 📁 Folder
+
+`Day-22-kubernetes/`
+
+### 🌐 Output
+
+Application accessible via:
+http://<EC2-PUBLIC-IP>:8080
+
+### 📌 Key Learnings
+
+* Kubernetes core components (Pod, Deployment, Service)
+* Cluster setup using Minikube
+* Service exposure and networking basics
+* Real-world debugging using kubectl
+
+---
+
 
 ---
 
