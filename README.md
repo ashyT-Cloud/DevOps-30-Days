@@ -170,6 +170,12 @@ http://<EC2-PUBLIC-IP>:8080
 * Service exposure and networking basics
 * Real-world debugging using kubectl
 
+
+## Day 23 - Kubernetes with YAML
+- Deployment using YAML
+- Service exposure using NodePort
+- Replica scaling
+- Declarative infrastructure
 ---
 
 
