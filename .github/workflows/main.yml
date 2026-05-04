@@ -1,7 +1,7 @@
 name: Day 5 CI with Docker
 
 on:
-  push:
+  workflow_dispatch:
     paths:
       - 'Day-5-github-actions/**'
 
