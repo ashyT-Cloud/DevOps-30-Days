@@ -179,6 +179,12 @@ http://<EC2-PUBLIC-IP>:8080
 ---
 
 
+## Day 24 - Kubernetes App Deployment
+- Dockerized Node.js application
+- Deployed on Kubernetes using YAML
+- Debugged service routing issues
+- End-to-end DevOps workflow
+
 ---
 
 
