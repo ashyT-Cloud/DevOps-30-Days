@@ -187,6 +187,11 @@ http://<EC2-PUBLIC-IP>:8080
 
 ---
 
+## Day 25 - Scaling & Rolling Updates
+- Scaled deployment replicas
+- Performed rolling updates
+- Implemented zero downtime deployment
+- Learned rollback strategies
 
 ## 🔥 Goal
 Become job-ready DevOps Engineer
