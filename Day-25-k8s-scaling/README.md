@@ -79,5 +79,3 @@ kubectl rollout undo deployment myapp-deployment
 
 ---
 
-## 📷 Screenshot
-
