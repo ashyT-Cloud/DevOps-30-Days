@@ -193,5 +193,7 @@ http://<EC2-PUBLIC-IP>:8080
 - Implemented zero downtime deployment
 - Learned rollback strategies
 
+## Day 26: Kubernetes Ingress (Routing Concept)
+
 ## 🔥 Goal
 Become job-ready DevOps Engineer
