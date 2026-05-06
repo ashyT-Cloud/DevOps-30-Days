@@ -1,37 +1,38 @@
-name: Deploy to Kubernetes
+name: Kubernetes CI/CD
 
 on:
-  workflow_dispatch:
+  push:
     branches:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
-    - name: Login to Docker Hub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+    - name: Login to DockerHub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker Image
-      run: docker build -t ashytcloud/day5-app:latest ./day-15-k8s-cicd
+      run: |
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/myapp:${{ github.sha }} .
 
     - name: Push Docker Image
-      run: docker push ashytcloud/day5-app:latest
-
-    - name: Set up kubeconfig
       run: |
-        mkdir -p $HOME/.kube
-        echo "${{ secrets.KUBE_CONFIG }}" > $HOME/.kube/config
+        docker push ${{ secrets.DOCKER_USERNAME }}/myapp.${{ github.sha }}
+
+    - name: Setup Kubeconfig
+      run: |
+        mkdir -p ~/.kube
+        echo "${{ secrets.KUBE_CONFIG }}" > ~/.kube/config
 
     - name: Deploy to Kubernetes
       run: |
-        kubectl apply -f day-15-k8s-cicd/deployment.yml --insecure-skip-tls-verify=true
-        kubectl apply -f day-15-k8s-cicd/service.yml  --insecure-skip-tls-verify=true
-
-    - name: Restart Deployment
-      run: |
-        kubectl rollout restart deployment node-app --insecure-skip-tls-verify=true
+        kubectl set image deployment/myapp-deployment myapp-container=${{ secrets.DOCKER_USERNAME }}/myapp:${{ github.sha }}
+        kubectl rollout status deployment/myapp-deployment
