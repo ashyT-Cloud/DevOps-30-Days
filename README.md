@@ -195,5 +195,13 @@ http://<EC2-PUBLIC-IP>:8080
 
 ## Day 26: Kubernetes Ingress (Routing Concept)
 
+
+### ☸️ Kubernetes & CI/CD
+- Day 22: Minikube Cluster Setup
+- Day 23: Kubernetes YAML Deployments
+- Day 24: Deploy Node.js App on Kubernetes
+- Day 25: Scaling & Rolling Updates
+- Day 26: Kubernetes Ingress
+- Day 27: CI/CD Pipeline using GitHub Actions + DockerHub + Kubernetes
 ## 🔥 Goal
 Become job-ready DevOps Engineer
