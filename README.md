@@ -203,5 +203,7 @@ http://<EC2-PUBLIC-IP>:8080
 - Day 25: Scaling & Rolling Updates
 - Day 26: Kubernetes Ingress
 - Day 27: CI/CD Pipeline using GitHub Actions + DockerHub + Kubernetes
+- Day 28: Kubernetes Persistent Volumes & Persistent Volume Claims
+
 ## 🔥 Goal
 Become job-ready DevOps Engineer
