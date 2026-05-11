@@ -205,7 +205,7 @@ http://<EC2-PUBLIC-IP>:8080
 - Day 27: CI/CD Pipeline using GitHub Actions + DockerHub + Kubernetes
 - Day 28: Kubernetes Persistent Volumes & Persistent Volume Claims
 - Day 29: Helm Chart for Kubernetes Deployment & Management
-
+- Day 30: Final DevOps Capstone Project integrating Docker, Kubernetes, Helm, CI/CD, Ingress, and Persistent Storage
 
 ## 🔥 Goal
 Become job-ready DevOps Engineer
